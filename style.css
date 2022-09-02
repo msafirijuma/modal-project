@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 5px;
+}
+
+.btn {
+    display: block;
+    background-color: rgb(120, 120, 150);
+    padding-block: 0.3rem;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: #fefefe;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4), -2px -2px 4px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    width: 100%;
+    margin: auto;
+    animation: modal 0.8s ease;
+}
+
+@keyframes modal {
+ from {
+    opacity: 0.2;
+    top: -30px;
+ } 
+ to {
+    opacity: 1;
+    top: 0;
+ }
+}
+
+.form-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    width: 100%;
+}
+
+.form-control {
+    width: 80%;
+    height: 40px;
+    border-radius: 0.25rem;
+}
+
+.btnAdd {
+    display: block;
+    background-color: aqua;
+    padding-inline: 20px;
+    padding-block: 6px;
+}
+
+.btn-close {
+    display: block;
+    font-size: 40px;
+    cursor: pointer;
+    position: relative;
+    left: 95%;
+    top: -28px;
+}
